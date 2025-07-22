@@ -13,7 +13,7 @@ from sklearn.metrics import classification_report, accuracy_score
 # Load and clean data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("adult.csv")
+    df = pd.read_csv("adult .csv")
     df.replace(' ?', np.nan, inplace=True)
     df.dropna(inplace=True)
     return df
